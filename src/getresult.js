@@ -12,7 +12,7 @@ const getResult = (input, spinner)=>{
 	return token.get(input).then(function(tk){
 				//console.log(tk);
 				let arg = {
-					client: 't',
+					client: 'gtx',
 					sl: options.from,
 					tl: options.to,
 					hl: options.from,

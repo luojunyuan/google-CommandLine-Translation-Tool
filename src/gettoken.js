@@ -4,7 +4,6 @@
  *
  * Everything between 'BEGIN' and 'END' was copied from the url above.
  */
-
 var got = require('got');
 var Configstore = require('configstore');
 
@@ -80,7 +79,7 @@ function updateTKK() {
         if (Number(window.TKK.split('.')[0]) === now) {
             resolve();
         } else {
-            got('https://translate.google.cn').then(function (res) {
+            got('https://translate.google.com').then(function (res) {
                 var code = res.body.match(/TKK=(.*?)\(\)\)'\);/g);
 
                 if (code) {
